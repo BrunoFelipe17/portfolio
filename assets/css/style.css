@@ -47,8 +47,8 @@
 }
 
 html {
-    /* background: #FAFAFA; */
-    background: linear-gradient(var(--gradient-aqua-primary), var(--gradient-aqua-secondary));
+    background: var(--gray-primary);
+    /* background: linear-gradient(var(--gradient-aqua-primary), var(--gradient-aqua-secondary)); */
 }
 
 .menu__mobile {
@@ -56,7 +56,7 @@ html {
     justify-content: flex-end;
 }
 
-.menu__mobile-circle {
+.menu__mobile-circle, .menu__mobile-close {
     height: 70px;
     width: 70px;
     color: white;
@@ -68,6 +68,48 @@ html {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    position: fixed;
+}
+
+.menu__mobile-circle {
+    z-index: 10;
+}
+
+.menu__mobile-close {
+    z-index: 5;
+}
+
+.menu__mobile-content {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--accent-primary);
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    left: 150%;
+    transition: 1s all;
+}
+
+.menu__mobile-content ul {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.menu__mobile-content ul p, .menu__mobile-content ul p a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    padding: 15px 18px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu__mobile-active {
+    background-color: var(--accent-secondary);
 }
 
 #cv {
@@ -87,7 +129,7 @@ html {
     text-align: center;
     border-radius: 50px;
     padding: 50px 0;
-    z-index: 999;
+    z-index: 1;
 }
 
 .sidebar__image {
