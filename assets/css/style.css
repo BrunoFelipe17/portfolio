@@ -39,6 +39,10 @@
     font-size: 16px;
 }
 
+body{
+    overflow-x:hidden!important;
+    }
+
 .body {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
@@ -132,6 +136,21 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    outline: hidden;
+}
+
+.about, .resume, .portfolio, .blog, .contact {
+    /* position: absolute; */
+    /* left: 50px; */
+    z-index: -10;
+    /* visibility: hidden; */
+    transition: all 1000MS;
+}
+
+.about.active {
+    left: 0;
+    visibility: visible;
 }
 
 .sidebar {
@@ -542,3 +561,6 @@ input[type=text], input[type=email] {
     background: var(--white);
     padding: 0 10px;
 }
+
+
+
