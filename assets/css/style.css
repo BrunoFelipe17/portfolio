@@ -796,6 +796,7 @@ input[type=text], input[type=email] {
 
     .menu__desktop {
         /* background: var(--white); */
+        display: flex;
         position: relative;
         top: -50px;
         width: 104.7%;
