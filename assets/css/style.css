@@ -752,13 +752,21 @@ input[type=text], input[type=email] {
     margin-left: 20px
 }
 
+.portfolio__container {
+    margin-top: 30px;
+}
+
+.portfolio__image img {
+    width: 100%;
+}
+
 @media only screen and (min-device-width : 768px) {
 /* Styles */
 
     .bg_top, .bg_bottom {
         display: hidden;
     }
-    
+
     html {
         background: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-aqua-primary)), to(var(--gradient-aqua-secondary)));
     background: -o-linear-gradient(var(--gradient-aqua-primary), var(--gradient-aqua-secondary));

@@ -39,7 +39,11 @@ menuMobileItems.forEach(function(menuMobileItem) {
         activeMenuMobile.classList.remove('menu__mobile-active');
         menuMobileItem.classList.add('menu__mobile-active');
         console.log(menuMobileItem.dataset.id)
-        mySwiper.slideTo(menuMobileItem.dataset.id)
+        if (menuMobileItem.dataset.id == 5) {
+            mySwiper.slideTo(0)
+        } else {
+            mySwiper.slideTo(menuMobileItem.dataset.id)
+        }
         activeMenuMobile = menuMobileItem;
         closeMenuMobile();
     })
