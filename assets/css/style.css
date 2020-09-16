@@ -370,3 +370,58 @@ html {
     font-size: 13px;
     color: var(--body-secondary);
 }
+
+.blog {
+    margin-bottom: 30px;
+}
+
+.blog__component {
+    background: var(--gray-secondary);
+    border-radius: 25px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.blog__component img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;    
+}
+
+
+.blog__component-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--body-primary);
+    margin-bottom: 10px;
+}
+
+.blog__component-texts {
+    padding: 20px 30px;
+    color: var(--body-tertiary);
+}
+
+.date {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    /* border-radius: 25px; */
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 9px 15px;
+    background-color: var(--accent-secondary);
+}
+
+.date__day {
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.date__month {
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: var(--white);
+    margin-top: -2px;
+}
