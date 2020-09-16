@@ -16,7 +16,7 @@ closeMenu.addEventListener('click', function() {
 
 
 var mySwiper = new Swiper('.swiper-container', {
-    speed: 250,
+    speed: 900,
     spaceBetween: 100,
     autoHeight: true,
     effect: 'slide',
@@ -38,7 +38,7 @@ menuMobileItems.forEach(function(menuMobileItem) {
 
 arrowsMobile.forEach(function(arrows) {
     arrows.addEventListener('click', function() {
-        mySwiper.slideTo(arrows.dataset.id)
+        mySwiper.slideNext()
     })
 })
 
