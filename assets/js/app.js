@@ -5,6 +5,10 @@ const menuMobileItems = document.querySelectorAll('.menu__mobile-item');
 let activeMenuMobile = document.querySelector('.menu__mobile-active');
 const arrowsMobile = document.querySelectorAll('.icon-arrow');
 
+
+const menuDesktopItems = document.querySelectorAll('.menu__desktop-item');
+let activeMenuDesktop = document.querySelector('.menu__desktop-item-active')
+
 openMenu.addEventListener('click', function() {
     menuMobile.style.left = '0%';   
     closeMenu.style.zIndex = 1001;
@@ -20,7 +24,12 @@ var mySwiper = new Swiper('.swiper-container', {
     spaceBetween: 100,
     autoHeight: true,
     effect: 'slide',
-    loop: 'true'
+    loop: 'true',
+    breakpoints: {
+        768: {
+            speed: 1500
+        }
+    }
 });
 
 
@@ -39,6 +48,16 @@ menuMobileItems.forEach(function(menuMobileItem) {
 arrowsMobile.forEach(function(arrows) {
     arrows.addEventListener('click', function() {
         mySwiper.slideNext()
+    })
+})
+
+menuDesktopItems.forEach(function(menuItem) {
+    menuItem.addEventListener('click', function() {
+        activeMenuDesktop.classList.remove('menu__desktop-item-active')
+        menuItem.classList.add('menu__desktop-item-active')
+        activeMenuDesktop = menuItem
+
+        mySwiper.slideTo(menuItem.dataset.id)
     })
 })
 

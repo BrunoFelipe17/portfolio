@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="bg_top">
+    <!-- <div class="bg_top">
         <img src="./assets/img/bg_top.svg" alt="">
-    </div>
+    </div> -->
 
     
     <section id="header">
@@ -29,17 +29,19 @@
             </div>
             <div class="menu__mobile-content">
                 <ul>
-                    <p class="menu__mobile-item menu__mobile-active" data-id="0"><a href="#">About</a></p>
-                    <p class="menu__mobile-item" data-id="1"><a href="#">Resume</a></p>
-                    <p class="menu__mobile-item" data-id="2"><a href="#">Portfolio</a></p>
-                    <p class="menu__mobile-item" data-id="3"><a href="#">Blog</a></p>
-                    <p class="menu__mobile-item" data-id="4"><a href="#">Contact</a></p>
+                    <p class="menu__mobile-item menu__mobile-active" data-id="1"><a href="#">Sobre mim</a></p>
+                    <p class="menu__mobile-item" data-id="2"><a href="#">Currículo</a></p>
+                    <p class="menu__mobile-item" data-id="3"><a href="#">Portfólio</a></p>
+                    <p class="menu__mobile-item" data-id="4"><a href="#">Blog</a></p>
+                    <p class="menu__mobile-item" data-id="5"><a href="#">Contato</a></p>
                 </ul>
             </div>
         </div>
+        
     </section>
 
     <section id="cv">
+        <!-- <div class="cv_bg"> -->
         <div class="sidebar">
             <div class="sidebar__container">
                 <img src="assets/img/Avatar.png" alt="Foto" class="sidebar__image">
@@ -50,9 +52,11 @@
                     </p>
                 </div>
                 <div class="sidebar__social">
-                    <img src="assets/img/facebook.svg" alt="">
-                    <img src="assets/img/linkedin.svg" alt="">
-                    <img src="assets/img/twitter.svg" alt="">
+                    <a href="https://www.facebook.com/profile.php?id=100023038020637" target="_blank">
+                    <img src="assets/img/facebook.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/bruno-felipe-218aa3192/" target="_blank">
+                    <img src="assets/img/linkedin.svg" alt=""></a>
+                    <!-- <img src="assets/img/twitter.svg" alt=""> -->
                 </div>
                 <div class="sidebar__info">
                     <div class="sidebar__info-block">
@@ -71,22 +75,43 @@
                 <button class="sidebar__button" type="button">
                     <div class="sidebar__button__content">
                         <img src="assets/img/download.svg" alt="Download CV" class="sidebar__button__content-image">
-                        <span class="h3">Download CV</span>
+                        <span class="h3"><a href="./assets/Bruno Felipe - CV.pdf" class="cv_link">Download CV</a></span>
                     </div>
                 </button>
             </div>
 
         </div>
-
-
         <div class="content">
+            <div class="menu__desktop">
+                <img src="./assets/img/BG.svg" alt="">
+                <div class="menu__desktop-content">
+                <ul>
+                    <p class="menu__desktop-item menu__desktop-item-active" data-id="1"><a href="#">Sobre mim</a></p>
+                        <p class="menu__desktop-item" data-id="2"><a href="#">Currículo</a></p>
+                        <p class="menu__desktop-item" data-id="3"><a href="#">Portfólio</a></p>
+                        <p class="menu__desktop-item" data-id="4"><a href="#">Blog</a></p>
+                        <p class="menu__desktop-item" data-id="5"><a href="#">Contato</a></p>
+                </ul>
+            </div>
+            </div>
+
+            
+            <!-- <div class="menu_desktop">
+                <ul>
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>d</li>
+                    <li>e</li>
+                </ul>
+            </div> -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
 
                 
             <div id="about" class="about swiper-slide">
                 <div class="content__title">
-                    <h1 class="about__title h1">About me </h1>
+                    <h1 class="about__title h1">Sobre mim </h1>
                     <div class="icon-arrow icon-arrow-2 icon-arrow-left"></div>
                 </div>
                 <div class="line">
@@ -95,35 +120,32 @@
                 </div>
 
                 <div class="about__text__body">
-                    <p class="about__text body">I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web
-                        development and print media. I enjoy turning complex problems into simple, beautiful and intuitive
-                        designs.</p><br>
                     <p class="about__text body">
-                        My job is to build your website so that it is functional and user-friendly but at the same time
-                        attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and
-                        easy to use. My aim is to bring across your message and identity in the most creative way. I created
-                        web design for many famous brand companies.
+                        Oi, eu me chamo Bruno!<br><br>
+                        Atualmente sou Integrador de Tecnologiana <strong>Escola Móbile</strong> e <strong>Desenvolver Web</strong> como Freelancer e Gosto de transformar problemas complexos em designs simples, bonitos e intuitivos.</p><br>
+                    <p class="about__text body">
+                        Meu trabalho é construir seu site de forma que seja funcional e amigável, mas ao mesmo tempo atraente. Além disso, adiciono um toque pessoal ao seu produto e me certifico de que seja atraente e fácil de usar. Meu objetivo é transmitir sua mensagem e identidade da maneira mais criativa.
                     </p>
                 </div>
 
                 <div class="about__doing">
-                    <h2 class="about__doing-title h2">What I'm Doing</h2>
+                    <h2 class="about__doing-title h2">O que eu faço</h2>
 
                     <div class="about__doing__tasks">
                         <div class="about__doing__tasks-block">
                             <img src="assets/img/design.svg" alt="Icone de Design" class="about__doing__tasks-img">
                             <h3 class="about__doing__tasks-title h3">Web Design</h3>
-                            <p class="about__doing__tasks-text body">The most modern and high-quality design made at a professional level. </p>
+                            <p class="about__doing__tasks-text body">O design mais moderno e de alta qualidade feito a nível profissional</p>
                         </div>
                         <div class="about__doing__tasks-block">
                             <img src="assets/img/development.svg" alt="Icone de Desenvolvimento" class="about__doing__tasks-img">
-                            <h3 class="about__doing__tasks-title h3">Web Development</h3>
-                            <p class="about__doing__tasks-text body">High-quality development of sites at the professional level.</p>
+                            <h3 class="about__doing__tasks-title h3">Desenvolvimento Web</h3>
+                            <p class="about__doing__tasks-text body">Desenvolvimento de sites de alta qualidade a nível profissional.</p>
                         </div>
                         <div class="about__doing__tasks-block">
                             <img src="assets/img/apps.svg" alt="Icone de Celular" class="about__doing__tasks-img">
-                            <h3 class="about__doing__tasks-title h3">Mobile Apps</h3>
-                            <p class="about__doing__tasks-text body">Professional development of applications for iOS and Android.</p>
+                            <h3 class="about__doing__tasks-title h3">Aplicativos</h3>
+                            <p class="about__doing__tasks-text body">Desenvolvimento profissional de aplicativos para Android.</p>
                         </div>
                     </div>
                 </div>
@@ -131,7 +153,7 @@
 
             <div class="resume swiper-slide">
                 <div class="content__title">
-                    <h1 class="resume__title h1">Resume</h1>
+                    <h1 class="resume__title h1">Currículo</h1>
                     <div class="icon-arrow icon-arrow-2 icon-arrow-left"></div>
                 </div>
                 <div class="line">
@@ -141,29 +163,45 @@
                 <div class="education">
                     <div class="education__title-box">
                         <img src="assets/img/education.svg" alt="Icone de Educação">
-                        <h2 class="education__title h2">Education</h2>
+                        <h2 class="education__title h2">Educação</h2>
                     </div>
                     <div class="education__box">
                         <h3 class="education__box-title h3">Ciência da Computação</h3>
                         <p class="education__box-date">2017-2020 - Universidade Anhembi Morumbi</p>
-                        <p class="education__box-text body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis quis sint velit, repudiandae excepturi doloremque ipsa, ipsam sapiente veniam voluptate odit eaque eveniet rem architecto consectetur illo minus officiis!</p>
+                        <!-- <p class="education__box-text body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis quis sint velit, repudiandae excepturi doloremque ipsa, ipsam sapiente veniam voluptate odit eaque eveniet rem architecto consectetur illo minus officiis!</p> -->
                     </div>
                 </div>
 
                 <div class="work">
                     <div class="work__title-box">
                         <img src="assets/img/education.svg" alt="Icone de Educação">
-                        <h2 class="work__title h2">Work</h2>
+                        <h2 class="work__title h2">Trabalho</h2>
                     </div>
                     <div class="work__box">
                         <h3 class="work__box-title h3">Integrador de Tecnologia</h3>
                         <p class="work__box-date">2020 - Atual - Escola Móbile</p>
-                        <p class="work__box-text body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis quis sint velit, repudiandae excepturi doloremque ipsa, ipsam sapiente veniam voluptate odit eaque eveniet rem architecto consectetur illo minus officiis!</p>
+                        <ul>
+                            <li class="work__box-text body">Promover o uso da tecnologia para alcançar os objetivos do currículo de letramento digital</li>
+                            <li class="work__box-text body">Estimular o Pensamento Computacional nos estudantes</li>
+                            <li class="work__box-text body">Estimular o uso de tecnologias nas salas de aula explorando os currículos de cada matéria, atuando junto dos professores e coordenadores</li>
+                            <li class="work__box-text body">Pesquisa de novas tecnologias para a realização de atividades nas salas de aula</li>
+                            <li class="work__box-text body">Suporte para a realização de atividades que envolvem tecnologia</li>
+                            <li class="work__box-text body">Criação de aplicativos e jogos educacionais</li>
+                            <li class="work__box-text body">Orientar estudantes em projetos que visam a solução de algum problema</li>
+                        </ul>
                     </div>
                     <div class="work__box">
                         <h3 class="work__box-title h3">Analista de Criação Jr</h3>
                         <p class="work__box-date">2019 - 2020 - Colégio V. de Porto Seguro</p>
-                        <p class="work__box-text body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis quis sint velit, repudiandae excepturi doloremque ipsa, ipsam sapiente veniam voluptate odit eaque eveniet rem architecto consectetur illo minus officiis!</p>
+                        <ul>
+                            <li class="work__box-text body">Criação de Design (books, logomarcas, banners etc.)</li>
+                            <li class="work__box-text body">Criação de sites</li>
+                            <li class="work__box-text body">Auxílio no desenvolvimento de mailings</li>
+                            <li class="work__box-text body">Auxílio na comunicação entre colégio/pais</li>
+                            <li class="work__box-text body">Organização de comunicados a serem enviados via e-mail</li>
+                            <li class="work__box-text body">Gerenciamento dos comunicados enviados</li>
+                            <li class="work__box-text body">Responsável pela criação e manutenção de novas funcionalidades</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -181,7 +219,7 @@
                         <p class="body">Testes: JUnit</p>
                     </div>
                     <div class="skills__box">
-                        <p>Mobile: Android, Kotlin, Java</p>
+                        <p class="body">Mobile: Android, Kotlin, Java</p>
                     </div>
                 </div>
 
@@ -197,35 +235,37 @@
                     <div class="line-orange"></div>
                 </div>
 
-                <div class="portfolio__list">
+                <!-- <div class="portfolio__list">
                     <p><a href="#" class="portfolio__item portfolio__active">All</a></p>
                     <p><a href="#" class="portfolio__item">Web Design</a></p>
                     <p><a href="#" class="portfolio__item">Photography</a></p>
                     <p><a href="#" class="portfolio__item">Video</a></p>
+                </div> -->
 
-                </div>
+                <div class="portfolio__container">
 
+                
                 <div class="portfolio__box">
                     <div class="portfolio__image">
-                        <img src="assets/img/1.png" alt="">
+                        <img src="assets/img/inscricoes.png" alt="">
                         <p class="portfolio__subtitle body">
-                            Abstract #1
+                            Site de inscrições
                         </p>
-                        <small class="portfolio__tag">Photography</small>
+                        <small class="portfolio__tag">Desenvolvimento Web</small>
                     </div>
                 </div>
 
                 <div class="portfolio__box">
                     <div class="portfolio__image">
-                        <img src="assets/img/5.png" alt="">
+                        <img src="assets/img/live.png" alt="">
                         <p class="portfolio__subtitle body">
-                            Abstract #3
+                            Arte para Live
                         </p>
-                        <small class="portfolio__tag">Photography</small>
+                        <small class="portfolio__tag">Design</small>
                     </div>
                 </div>
 
-                <div class="portfolio__box">
+                <!-- <div class="portfolio__box">
                     <div class="portfolio__image">
                         <img src="assets/img/6.png" alt="">
                         <p class="portfolio__subtitle body">
@@ -263,8 +303,9 @@
                         </p>
                         <small class="portfolio__tag">Photography</small>
                     </div>
-                </div>
+                </div> -->
             </div>
+        </div>
 
             <div class="blog swiper-slide">
                 <div class="content__title">
@@ -276,11 +317,14 @@
                     <div class="line-orange"></div>
                 </div>
 
+                <div class="blog__container">
+
+                
                 <div class="blog__component">
                     <img src="./assets/img/blog_example.png" alt="">
                     <div class="blog__component-texts">
-                        <h2 class="h2 blog__component-title">Design Conferences in 2019</h2>
-                        <p class="body">This year find inspiration, fun, skills and the chance to meet some...</p>
+                        <h2 class="h2 blog__component-title">Kotlin Conference 2019</h2>
+                        <p class="body">Encontre inspiração, diversão, habilidades e a chance de fazer networking</p>
                     </div>
                     <div class="date">
                         <p class="date__day">15</p>
@@ -291,8 +335,8 @@
                 <div class="blog__component">
                     <img src="./assets/img/blog_example2.png" alt="">
                     <div class="blog__component-texts">
-                        <h2 class="h2 blog__component-title">UI Interactions of the week</h2>
-                        <p class="body">This year find inspiration, fun, skills and the chance to meet some...</p>
+                        <h2 class="h2 blog__component-title">Básicos do Kotlin</h2>
+                        <p class="body">Aprenda os básicos dessa linguagem que é a oficial para o desenvolvimento Android</p>
                     </div>
                     <div class="date">
                         <p class="date__day">12</p>
@@ -300,10 +344,11 @@
                     </div>
                 </div>
             </div>
+        </div>
 
             <div class="contact swiper-slide">
                 <div class="content__title">
-                    <h1 class="contact__title h1">Contact</h1>
+                    <h1 class="contact__title h1">Contato</h1>
                     <div class="icon-arrow icon-arrow-2 icon-arrow-left"></div>
                 </div>
                 <div class="line">
@@ -311,33 +356,40 @@
                     <div class="line-orange"></div>
                 </div>
                 <!-- <p class="body">Está precisando de um site, sistema, aplicativo ou então um treinamento em programação (pra você e/ou sua equipe)? Quer tirar uma dúvida sobre o meu trabalho? Ou então quer apenas trocar uma ideia?</p> -->
-                <a href="#" class="whatsapp"><img src="./assets/img/whatsapp.svg" class="whats__logo" alt=""> WhatsApp</a>
+                <!-- <a href="#" class="whatsapp"><img src="./assets/img/whatsapp.svg" class="whats__logo" alt=""> WhatsApp</a>
                 <div class="contact__or">
                     <h3 class="h3 contact__or-text"><span>Or</span></h3>
-                    <!-- <hr class="contact__line"> -->
-                </div>
+                    <hr class="contact__line">
+                </div> -->
                 
-                <h2 class="h2">Contact form</h2>
+                <!-- <h2 class="h2">Contact form</h2> -->
                 <form>
                     <div class="input__area">
-                        <input type="text" class="input__name" placeholder="Full name">
+                        <input type="text" class="input__name" placeholder="Nome completo">
                     </div>
                     <div class="input__area">
-                        <input type="email" class="input__email" placeholder="Email Address">
+                        <input type="email" class="input__email" placeholder="Email">
                     </div>
                     <div class="input__area">
-                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                        <textarea name="message" id="message" placeholder="Sua messagem"></textarea>
                     </div>
-                    <button class="form__send"><img src="./assets/img/send.svg" alt=""> Send Message</button>
+                    <button class="form__send"><img src="./assets/img/send.svg" alt=""> Enviar messagem</button>
                 </form>
             </div>
         </div>
     </div>
     </div>
+<!-- </div> -->
     </section>
     <!-- <div class="bg_bottom">
         <img src="./assets/img/bg_bottom.svg" alt="">
     </div> -->
+    <div class="grad__top">
+
+    </div>
+    <div class="grad__bottom">
+
+    </div>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
