@@ -741,7 +741,7 @@ input[type=text], input[type=email] {
         transform: rotate(45deg);
 }
 
-.menu_desktop {
+.menu__desktop {
     display: none;
 }
 
