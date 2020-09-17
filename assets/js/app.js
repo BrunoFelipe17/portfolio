@@ -30,8 +30,8 @@ var mySwiper = new Swiper('.swiper-container', {
     effect: 'slide',
     loop: 'true',
     breakpoints: {
-        768: {
-            speed: 1500
+        1000: {
+            allowTouchMove: false
         }
     }
 });
@@ -88,6 +88,9 @@ function closeMenuMobile() {
 
 
 
-const formSend = document.querySelector('.form__send');
+const form = document.querySelector('form')
 
-formSend.onsubmit = alert('oi')
+form.addEventListener('submit', function(e) {
+    e.preventDefault()
+    window.href.location = "https://www.google.com.br"
+})
