@@ -127,9 +127,10 @@ html {
 .menu__mobile-content ul {
     width: 100%;
     margin-left: 50px;
+    list-style: none;
 }
 
-.menu__mobile-content ul p, .menu__mobile-content ul p a {
+.menu__mobile-content ul li, .menu__mobile-content ul li a {
     color: white;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
