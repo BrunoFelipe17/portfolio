@@ -769,7 +769,7 @@ input[type=text], input[type=email] {
     width: 100%;
 }
 
-@media only screen and (min-device-width : 768px) {
+@media only screen and (min-device-width : 1000px) {
 /* Styles */
 
     .bg_top, .bg_bottom {
@@ -811,37 +811,48 @@ input[type=text], input[type=email] {
         border-top-right-radius: 50px;
         border-top-left-radius: 32% 10% 10% 10%;
         margin: 0;
-        padding: 0 40px;
+        padding: 40px 40px 0px 40px;
     }
 
     .menu__mobile {
         display: none;
     }
 
-    .menu__desktop {
-        /* background: var(--white); */
+    #top {
+        z-index: 999999;
+        height: 100%;
+        width: 90%;
+        margin: 50px auto 0;
+        height: 70px;
         display: flex;
-        position: relative;
-        top: -50px;
-        width: 104.7%;
-        padding: 25px 25px 10px 25px;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
+        justify-content: flex-end;
     }
 
-    .menu__desktop img {
+    #cv {
+        margin-top: 0 !important;
+    }
+
+
+
+    .menu__desktop {
+        display: flex;
+        position: relative;
+        background-image: url('../img/BG.svg');
+        background-repeat: no-repeat;
+        background-position: right;
         width: 100%;
-        position: absolute;
-        top: -37px;
-        right: 0;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        align-items: center;
+        justify-content: flex-end;
     }
 
     .menu__desktop-content {
-        width: 80%;
-        margin: 0 auto;
-        padding-left: 31px;
-        top: -20px;
         position: relative;
+        width: 60%;
+        display: flex;
+        /* justify-content: flex-end; */
+
     }
 
     .menu__desktop ul {
@@ -849,10 +860,11 @@ input[type=text], input[type=email] {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 100%;
+        width: 85%;
+        margin: 0 auto;
         position: relative;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
+            justify-content: space-evenly;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -862,6 +874,10 @@ input[type=text], input[type=email] {
         font-family: 'Inter', sans-serif;
         text-transform: uppercase;
     }
+
+    /* .menu__desktop-item {
+        padding: 0 20px;
+    } */
 
     .menu__desktop-item a {
         text-decoration: none;
@@ -937,20 +953,30 @@ input[type=text], input[type=email] {
         width: 315px;
         height: 274px;
     }
+
+    
 }
 
+@media only screen and (min-device-width : 1200px) {
+    .menu__desktop-content {
+        width: 55%;
+    }
+}
 
+@media only screen and (min-device-width : 1350px) {
+    .menu__desktop-content {
+        width: 50%;
+    }
+}
 
+@media only screen and (min-device-width : 1450px) {
+    .menu__desktop-content {
+        width: 45%;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (min-device-width : 1550px) {
+    .menu__desktop-content {
+        width: 40%;
+    }
+}
