@@ -88,3 +88,6 @@ function closeMenuMobile() {
 
 
 
+const formSend = document.querySelector('.form__send');
+
+formSend.onsubmit = alert('oi')

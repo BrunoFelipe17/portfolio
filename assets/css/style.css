@@ -630,7 +630,7 @@ input[type=text], input[type=email] {
 .whatsapp {
     margin: 30px 0 20px 0;
     text-decoration: none;
-    background: #25D366;
+    background: #0088cc;
 }
 
 .whats__logo {
@@ -664,6 +664,8 @@ input[type=text], input[type=email] {
 .contact__or-text span {
     background: var(--white);
     padding: 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px
 }
 
 
@@ -751,6 +753,12 @@ input[type=text], input[type=email] {
     text-decoration: none;
     color: white;
 }
+
+.telegram__button {
+    width: 100%;
+    background-color: #0088cc;
+}
+
 
 .portfolio__box a {
     text-decoration: none;
