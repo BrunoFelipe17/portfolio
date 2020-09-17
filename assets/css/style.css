@@ -751,6 +751,10 @@ input[type=text], input[type=email] {
     color: white;
 }
 
+.portfolio__box a {
+    text-decoration: none;
+}
+
 .skills__box p {
     color: var(--body-tertiary);
     margin-left: 20px
